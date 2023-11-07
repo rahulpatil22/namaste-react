@@ -9,7 +9,9 @@
 
     console.log(heading);  // it gives plane js object,react element is an object
     const root = ReactDOM.createRoot(document.getElementById("root"));
+    //react element is nothing but an object
     // passing react element inside root
     root.render(container);
+    //render is modified your DOM ,Modifier
     //root is a place where react runs
 
