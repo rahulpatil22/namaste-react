@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- <div id="header"><h1>Header</h1></div> -->
+    <div id="root">Not Rendered</div>
+    <!-- <div id="footer"><h1>footer</h1></div>
+    <h1 id="title">Hello World</h1> -->
+    <!-- <h1 id="title">Hello World</h1>
+    <h1 id="title">Hello World</h1>
+    <h1 id="title">Hello World</h1>
+    <h1 id="title">Hello World</h1> -->
+    <!-- <div id="container">
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+    </div> -->
+        
+    <!-- <h1>Hello React</h1> -->
+
+
+<!-- <script>
+  const heading= document.createElement("h1");
+  heading.innerHTML = "Namaste React by Javascript";
+  const root = document.getElementById("root");
+  root.appendChild(heading);
+</script> -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="App.js"></script>
+<script>
+    // const heading = React.createElement("h1",{id:"title"},"Namaste React by Javascript");
+    // const heading2 = React.createElement("h2",{id:"title"},"Namaste React by Javascript");
+    const heading = React.createElement("h1",{id:"title"},"Heading1");
+    const heading2 = React.createElement("h2",{id:"title"},"Heading2");
+    const container= React.createElement("div",{id:"container"},[heading,heading2])//when we have to pass in multiple child,use array
+{/* what is there will be a many id ,
+=> react will override there existing in there root , and react will replace it with whatever you give inside render*/}
+
+    console.log(heading);  // it gives plane js object,react element is an object
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // passing react element inside root
+    root.render(container);
+    //root is a place where react runs
+</script>
+</body>
+</html>
