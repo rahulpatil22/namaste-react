@@ -1,8 +1,12 @@
+import React from 'react';
+import ReactDOM from "react-dom/client" ;
+
+
 // const heading = React.createElement("h1",{id:"title"},"Namaste React by Javascript");
 // const heading2 = React.createElement("h2",{id:"title"},"Namaste React by Javascript");
-const heading = React.createElement("h1", { id: "title" }, "Heading1");
+const heading = React.createElement("h1", { id: "title" }, "Heading1  for parcel");
 
-// <h1 id="title">Heading1</h1> same as above line
+// <h1 id="title">Heading1</h1> same as above line36
 
 const heading2 = React.createElement("h2", { id: "title" }, "Heading2");
 
